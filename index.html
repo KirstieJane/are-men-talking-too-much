@@ -19,19 +19,18 @@ title: Are white people talking too much?
 
             <div class="row-fluid" id="button-div">
               <div class="col-xs-6">
-                <a class="btn btn-lg btn-default" id="dude">a white person</a>
+                <a class="btn btn-lg btn-default" id="dude">a white<br>person</a>
                 <p id="dude-display">00:00</p>
               </div>
               <div class="col-xs-6">
-                <a class="btn btn-lg btn-default" id="not-dude">not a white person</a>
+                <a class="btn btn-lg btn-default" id="not-dude">not a<br>white person</a>
                 <p id="not-dude-display">00:00</p>
               </div>
             </div>
             <div class="clearfix"></div>
 
             <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <p class="small"><a class="muted-link" href="https://github.com/cathydeng/are-men-talking-too-much">made with ♡ by Cathy Deng</a></p>
-
+            <p class="small"><a class="muted-link" href="https://github.com/cathydeng/are-men-talking-too-much">made with ♡ by Cathy Deng</a><br>and <a class="muted-link" href="https://github.com/kirstiejane/are-white-people-talking-too-much">forked with power by Kirstie Whitaker</a></p>
 
           </div>
       </div>
@@ -96,7 +95,7 @@ title: Are white people talking too much?
         var d_tot = (dude.time.hours * 3600) + (dude.time.minutes * 60) + dude.time.seconds;
         var l_tot = (not_dude.time.hours * 3600) + (not_dude.time.minutes * 60) + not_dude.time.seconds;
         var pct = parseInt(d_tot / (d_tot + l_tot) * 100, 10);
-        $ans.html('<span id="pct">' + pct + '</span>% men');
+        $ans.html('<span id="pct">' + pct + '</span>% white');
       }
 
       $dude.click(function() {
